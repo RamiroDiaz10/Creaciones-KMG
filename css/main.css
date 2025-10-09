@@ -24,6 +24,10 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   border: 1px dotted blue;
   box-sizing: border-box;
