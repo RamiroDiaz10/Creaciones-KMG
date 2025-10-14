@@ -24,8 +24,10 @@ body {
   flex-direction: column;
 }
 
+ul,
 a {
   text-decoration: none;
+  list-style: none;
 }
 
 .container {
@@ -52,6 +54,7 @@ a {
 .header {
   border: 1px dotted red;
 }
+
 /** Main */
 .main {
   flex: 1;
@@ -62,7 +65,52 @@ a {
 
 .footer {
   background-color: var(--Black-Pearl);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
 }
+
+
+.footer-container {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.footer-container h2 {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.footer-container ul,
+.footer-container p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  line-height: 1.8;
+
+}
+
+.icon-container {
+  display: flex;
+  width: 4%;
+  gap: 2rem;
+  flex-direction: column;
+  order: -1;
+  justify-content: center;
+}
+
+.icon-end {
+    display: flex;
+    margin: 0 2.4rem;
+    gap: 6rem;
+}
+
+.icon-content {
+    display: flex;
+    width: 13%;
+    gap: 2rem;
+}
+
 
 @media (width > 567px) {
   .container {
@@ -82,8 +130,8 @@ a {
     max-width: 72rem;
     padding: 0 2.4rem;
   }
-  
-/**Footer*/
+
+  /**Footer*/
   .footer-container {
     display: flex;
     gap: 4rem;
