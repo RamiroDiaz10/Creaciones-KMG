@@ -74,6 +74,94 @@ a {
 
 /**Aside*/
 
+/**carousel*/
+
+.container-carousel-down {
+  width: 85%;
+  overflow-x: auto;
+  margin: 3em auto;
+  display: flex;
+  gap: 1em;
+  scroll-behavior: smooth;
+  anchor-name: --carousel;
+  scroll-snap-type: x mandatory;
+  scroll-marker-group: after;
+
+}
+
+
+
+.card {
+  scroll-snap-align: start;
+  flex: 0 0 85%;
+  aspect-ratio: 7 / 3;
+  background-color: var(--Pink-Pearl);
+  padding: 1em ;
+  border-radius: .5em;
+  text-align: center;
+  align-items: center;
+
+}
+
+.container-carousel-down::-webkit-scrollbar {
+  display: none;
+
+}
+
+.container-carousel-down::scroll-button(right), .container-carousel-down::scroll-button(left) {
+  content: '→';
+  border: none;
+  background-color: #db47a0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding-bottom: .1em;
+  cursor: pointer;
+  position: fixed;
+  position-anchor: --carousel;
+  position-area: right center;
+  translate: -50%;
+
+}
+
+.container-carousel-down::scroll-button(left) {
+  content: '←';
+  position-area: left center; 
+  translate: 50%;
+}
+
+.container-carousel-down::scroll-button(right):disabled, .container-carousel-down::scroll-button(left):disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.container-carousel-down::scroll-marker-group{
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+  /* position: relative;
+  top: -8rem */
+  transform: translateY(-8rem);
+}
+
+.card::scroll-marker {
+  content: '';
+  height: 1em;
+  width: 1em;
+  background-color: #0f0f0f;
+  border-radius: 50%;
+
+}
+
+.card::scroll-marker:target-current{
+  background-color: var(--Pink-Pearl);
+}
+
+
+
 /**register*/
 .container-register {
   background-color: #0f0f0f;    
@@ -118,10 +206,8 @@ a {
 
 /**Footer*/
 
-.footer {
+.footer .container {
   background-color: var(--Pink-Pearl);
-  /* display: flex;
-  justify-content: space-between; */
   padding: 2rem;
 }
 
@@ -181,6 +267,16 @@ a {
     padding: 0 1.6rem;
     /** Maneja la distancia entre contenido y el borde del contenedor e incrementa en 8px en cada media query */
   }
+
+  /**carrusel*/
+
+  .container-carousel-down {
+    max-width: 90%;
+  }
+
+  .card {
+    flex: 0 0 100%;
+  }
 }
 
 /** Header */
@@ -194,10 +290,16 @@ a {
     padding: 0 2.4rem;
   }
 
+  
+
   /**Footer*/
   .footer-container {
     display: flex;
     gap: 1.4em;
+  }
+
+  .container-carousel-down{
+    width: 90%;
   }
 }
 
