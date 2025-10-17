@@ -29,7 +29,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 40px;
+      padding: 15px 50px;
       background-color: #ffffff;
     }
 
@@ -105,7 +105,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 50px 30px;
     border-top: 1px solid orange;
 }
 
@@ -114,7 +114,7 @@
     align-items: center;
     gap: 6px;
     font-weight: 600;
-    border: 1px solid green;
+    border: 1px solid rgb(4, 102, 4);
     justify-content: center;
 }
 
@@ -133,10 +133,81 @@ ul.nav-links {
     border: 1px solid orange;
 }
 
+/*Carousel*/
+.carousel{
+  width: 100%;
+  overflow-x: auto;
+  margin: 3em auto;
+  display: flex;
+  gap: 1em;
+  /*border: 1px solid green;*/
+  scroll-behavior: smooth;
+  anchor-name: --carousel;
+  scroll-snap-type: x mandatory;
+  scroll-marker-group: after;
+}
+
+.carousel::scroll-marker-group{
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+}
+
+.elemento::scroll-marker{
+content: '';
+height: 1em;
+width: 1em;
+background-color: #e25e11;
+border-radius: 50%;
+}
+
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.carousel::scroll-button(right),.carousel::scroll-button(left) {
+  content:'→';
+  border: none;
+  background-color: yellow;
+  font-family: sans-serif;
+  font-size: 3rem;
+  color: #eee;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding-bottom: .1em;
+  cursor: pointer;
+  position: absolute;
+  position-anchor: --carousel;
+  position-area: right center;
+  translate: -70%;
+
+}
+
+.carousel::scroll-button(left) {
+  content:'←';
+  position-area: left center;
+  translate: 70%;
+}
+
+.elemento{
+  scroll-snap-type: start;
+  flex: 0 0 20em;
+  aspect-ratio: 5 / 3;
+  height: 12em;
+  background-color: red;
+  padding: 1em;
+  border-radius: .5em;
+  text-align: center;
+  align-content: center;
+}
+
 /*section*/
 .section-popular {
     background-color: peachpuff;
+
 }
+
 
 h2{
   text-align: center;
