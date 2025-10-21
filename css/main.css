@@ -96,11 +96,13 @@ a {
   flex: 0 0 85%;
   aspect-ratio: 7 / 3;
   background-color: var(--Pink-Pearl);
-  padding: 1em ;
+  padding: 1em;
   border-radius: .5em;
   text-align: center;
   align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
 }
 
 .container-carousel-down::-webkit-scrollbar {
@@ -108,7 +110,8 @@ a {
 
 }
 
-.container-carousel-down::scroll-button(right), .container-carousel-down::scroll-button(left) {
+.container-carousel-down::scroll-button(right),
+.container-carousel-down::scroll-button(left) {
   content: '→';
   border: none;
   background-color: #db47a0;
@@ -129,16 +132,17 @@ a {
 
 .container-carousel-down::scroll-button(left) {
   content: '←';
-  position-area: left center; 
+  position-area: left center;
   translate: 50%;
 }
 
-.container-carousel-down::scroll-button(right):disabled, .container-carousel-down::scroll-button(left):disabled {
+.container-carousel-down::scroll-button(right):disabled,
+.container-carousel-down::scroll-button(left):disabled {
   opacity: 0.5;
   cursor: auto;
 }
 
-.container-carousel-down::scroll-marker-group{
+.container-carousel-down::scroll-marker-group {
   display: flex;
   justify-content: center;
   gap: .5em;
@@ -156,15 +160,34 @@ a {
 
 }
 
-.card::scroll-marker:target-current{
+.card::scroll-marker:target-current {
   background-color: var(--Pink-Pearl);
+}
+
+.card p {
+  flex: 0 0 3rem;
+}
+
+.profile {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 23rem;
+  height: 23rem;
+  object-fit: cover;
+
 }
 
 
 
 /**register*/
 .container-register {
-  background-color: #0f0f0f;    
+  background-color: #0f0f0f;
   background-image: url(../images/fondo-register.jpg);
 }
 
@@ -197,7 +220,7 @@ a {
 .botton {
   width: 19%;
   border-radius: 0 18px 18px 0;
-  background-color:var(--Pink-Pearl);
+  background-color: var(--Pink-Pearl);
   border: none;
 
 }
@@ -290,18 +313,19 @@ a {
     padding: 0 2.4rem;
   }
 
-  
-
-  /**Footer*/
-  .footer-container {
-    display: flex;
-    gap: 1.4em;
-  }
-
-  .container-carousel-down{
+  /* carousel */
+  .container-carousel-down {
     width: 90%;
   }
 }
+
+/**Footer*/
+.footer-container {
+  display: flex;
+  gap: 1.4em;
+}
+
+
 
 /** Header */
 /** Main */
