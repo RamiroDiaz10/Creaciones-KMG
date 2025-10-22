@@ -46,20 +46,29 @@
     
 
     <!-- Navigation -->
-    <nav class="nav-bar">
-      <div class="container-categorias">
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop ▾</a></li>
-        <li><a href="#">Product</a></li>
-        <li><a href="#">Pages ▾</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+<nav class="main-navbar">
+    <div class="navbar-left">
+      <div class="category-dropdown">
+        <span class="icon">☰</span>
+        <span class="text">all categories</span>
+        <span class="arrow">▾</span>
       </div>
-      <div class="promo">
-        <span> Save 20% Off Your First Order.</span>
-      </div>
-    </nav>
+    </div>
+
+    <ul>
+      <li><a href="#" class="active"> home </a></li>
+      <li class="dropdown-link"><a href="#"> shop <span class="arrow"></span></a></li>
+      <li class="dropdown-link"><a href="#"> product <span class="arrow"></span></a></li>
+      <li class="dropdown-link"><a href="#"> pages <span class="arrow"></span></a></li>
+    </ul>
+
+    <div class="navbar-right">
+      <span class="discount-promo">
+        <span class="icon">⚙️</span>
+        save 30% off your first order.
+      </span>
+    </div>
+</nav>
 
     <!--Carousel-->
       <section class="section-carousel">
