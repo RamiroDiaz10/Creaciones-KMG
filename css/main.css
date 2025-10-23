@@ -104,22 +104,26 @@
 
    
 /*menu*/
-.main-navbar{
-  align-items:center;
-  background-color: rgb(245, 201, 214);
-  border-bottom: 2px solid blue;
-  border: 2px solid green;
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  flex-direction:row ;
-  justify-content: space-between;
-  padding: 10px 20px;
+.main-navbar {
+    align-items: center;
+    background-color: rgb(245, 201, 214);
+    /* border-bottom: 2px solid blue; */
+    /* border: 2px solid green; */
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 li{
   display: contents;
   text-decoration: none;
+}
+
+ul{
+  display: contents;
 }
 
 a{
@@ -133,7 +137,7 @@ a{
 .navbar-left{
   display: flex;
   align-items: center;
-  border: 2px solid rgb(235, 243, 6);
+  /*border: 2px solid rgb(235, 243, 6);*/
 }
 
 .category-dropdown{
@@ -149,7 +153,8 @@ font-weight: 500;
 .category-dropdown .icon{
   font-size: 18px;
   margin-right: 5px;
-  color: royalblue;
+  color: white;
+  
 }
 
 .category-dropdown .arrow{
@@ -191,6 +196,7 @@ font-weight: 500;
 .navbar-right{
   display: flex;
   align-items: center;
+  font-family: cursive;
 }
 
 .discount-promo .icon{
@@ -288,13 +294,18 @@ background-color: rgb(236, 151, 165);
 border-radius: 50%;
 }
 
-
-
 .elemento::scroll-marker:target-current{
   -webkit-margin-bottom-collapse: rgb(231, 11, 11);
 }
 
-
+/*Groups*/
+.container-groups{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  border: 1px solid green;
+}
 
 /*section*/
 .section-popular {
