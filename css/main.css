@@ -14,6 +14,7 @@
   --Verde-vintage:	#a4b494;
   --Detalles-dorados:	#c9b79c;
   --fondopagina: #fff;
+  --fondo-section:#FFAB81;
   /* fuentes */
 
   --fuente-principal: "Palyfair Display", serif;
@@ -47,7 +48,7 @@ h2 {
   font-family: var(--fuente-principal);
   font-size: 3rem;
   color: var(--Marron-calido);
-
+  
 }
 
 h3 {
@@ -107,13 +108,13 @@ p {
   /** Distancia entre el contenido y el borde */
 }
 
-.container-fluid {
+/* .container-fluid {
   border: 1px solid orangered;
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 100vw;
   padding: 0;
-}
+} */
 
 /** Header */
 .header {
@@ -132,11 +133,6 @@ p {
   align-items: center;
   padding: 8px 40px;
   font-size: 14px;
-}
-
-.top-bar a {
-  /* color: rgb(253, 253, 253); */
-  text-decoration: none;
 }
 
 .top-bar a:hover {
@@ -234,7 +230,7 @@ p {
 /*menu*/
 .main-navbar {
   align-items: center;
-  background-color: rgb(245, 201, 214);
+  background-color: var(--fondo-section);
   /* border-bottom: 2px solid blue; */
   /* border: 2px solid green; */
   display: grid;
@@ -312,7 +308,7 @@ display: none;
 /** Main */
 .main {
   flex: 1;
-  background-color:rgb(245, 201, 214)
+      background-color: #ffd7c3;
 }
 
 .category-dropdown {
@@ -545,10 +541,10 @@ display: none;
   display: flex;
   gap: 1em;
   scroll-behavior: smooth;
-  anchor-name: --carousel;
+  anchor-name: --carousell;
   scroll-snap-type: x mandatory;
   scroll-marker-group: after;
-  background-color: #efae80;
+  background-color: #272525;
 
   &::-webkit-scrollbar {
     display: none;
@@ -558,7 +554,7 @@ display: none;
   &::scroll-button(left) {
     content: "→";
     border: none;
-    background-color: #db47a0;
+    background-color: #ff7f3f;
     font-family: "Courier New", Courier, monospace;
     font-size: 3rem;
     color: white;
@@ -568,7 +564,7 @@ display: none;
     padding-bottom: 0.1em;
     cursor: pointer;
     position: fixed;
-    position-anchor: --carousel;
+    position-anchor: --carousell;
     position-area: right center;
     translate: -50%;
   }
@@ -624,17 +620,19 @@ display: none;
     font-size: 2.1rem;
     margin-top: 1rem;
     width: 80%;
+    color: white;
   }
 
   & .name {
     font-size: 3rem;
     flex: 0 0 4rem;
-    color: #6600ff;
+    color: #ff7f3f;
   }
 
   & .city {
     font-size: 2rem;
     flex: 0 0 6rem;
+    color: #ff7f3f;
   }
 }
 
@@ -681,6 +679,15 @@ display: none;
   margin-top: 2rem;
 }
 
+.content-register h2 {
+  color: white;
+}
+
+.content-register p {
+    color: white;
+    font-size: x-large;
+}
+
 .content-form {
   display: flex;
   padding: 5rem;
@@ -713,7 +720,7 @@ display: none;
       .botton {
         width: 20rem;
         border-radius: 13px;
-        background-color: var(--Pink-Pearl);
+        background-color: var(--fondo-section);
         border: none;
         height: 5.2rem;
       }
@@ -847,11 +854,13 @@ display: none;
 
         .content-botton {
           display: flex;
-
+          
           .botton {
+
             border-radius: 0 18px 18px 0;
-            background-color: var(--Pink-Pearl);
+            background-color: var(--fondo-section);
             border: none;
+            cursor: pointer;
           }
         }
       }
