@@ -13,8 +13,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.css" />
+
+
+
   </head>
   <body>
+
     <!-- Header Section -->
     <header class="header">
       <div class="top-bar">
@@ -45,23 +49,42 @@
       </div>
     </div>
 
+
+    <div class="mobile-navbar" id="navbar-movile">
+        <ul class="center-navigation">
+        <li><a href="#" class="active"> Home </a></li>
+        <li class="dropdown-link">
+          <a href="#"> Shop <span class="arrow"></span></a>
+        </li>
+        <li class="dropdown-link">
+          <a href="#"> Product <span class="arrow"></span></a>
+        </li>
+        <li class="dropdown-link">
+          <a href="#"> pages <span class="arrow"></span></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mobile-navbar-close" id="close-navbar">
+    </div>
+
     <!-- Navigation -->
     <nav class="main-navbar">
       <div class="navbar-left">
-        <div class="category-dropdown">
+        <div class="category-dropdown" id="bouton-movile">
           <span class="icon">☰</span>
           <span class="text">all categories</span>
           <span class="arrow">▾</span>
         </div>
       </div>
 
-      <ul>
-        <li><a href="#" class="active"> home </a></li>
+      <ul class="center-navigation">
+        <li><a href="#" class="active"> Home </a></li>
         <li class="dropdown-link">
-          <a href="#"> shop <span class="arrow"></span></a>
+          <a href="#"> Shop <span class="arrow"></span></a>
         </li>
         <li class="dropdown-link">
-          <a href="#"> product <span class="arrow"></span></a>
+          <a href="#"> Product <span class="arrow"></span></a>
         </li>
         <li class="dropdown-link">
           <a href="#"> pages <span class="arrow"></span></a>
@@ -71,131 +94,157 @@
       <div class="navbar-right">
         <span class="discount-promo">
           <span class="icon">⚙️</span>
-          save 30% off your first order.
+          Save 30% Off Your First Order.
         </span>
       </div>
     </nav>
-
-   
 
     <main class="main">
       <!--CarZousel-->
       <section class="section-carousel">
         <div class="carousel">
+          <!-- <div class="group"> -->
           <div class="elemento">
             <picture>
-              <source
-                media="(width < 768px)"
-                srcset="./images/doll-portrait.webp"
-              />
-              <source
-                media="(width >= 768px)"
-                srcset="./images/doll-landscape.webp"
-              />
               <img
                 class="image-doll"
-                src="./images/doll-landscape.webp"
+                src="./images/Designer-campesina.png"
                 alt="No olvidar descripcion de la foto"
               />
             </picture>
           </div>
+
           <div class="elemento">
             <picture>
-              <source
-                media="(width < 768px)"
-                srcset="./images/doll-portrait.webp"
-              />
-              <source
-                media="(width >= 768px)"
-                srcset="./images/doll-landscape.webp"
-              />
               <img
                 class="image-doll"
-                src="./images/doll-landscape.webp"
+                src="./images/Designer-Muneca.png"
                 alt="No olvidar descripcion de la foto"
               />
             </picture>
           </div>
+
           <div class="elemento">
             <picture>
-              <source
-                media="(width < 768px)"
-                srcset="./images/doll-portrait.webp"
-              />
-              <source
-                media="(width >= 768px)"
-                srcset="./images/doll-landscape.webp"
-              />
               <img
                 class="image-doll"
-                src="./images/doll-landscape.webp"
+                src="./images/Designer-campesina.png"
                 alt="No olvidar descripcion de la foto"
               />
             </picture>
           </div>
+
           <div class="elemento">
             <picture>
-              <source
-                media="(width < 768px)"
-                srcset="./images/doll-portrait.webp"
-              />
-              <source
-                media="(width >= 768px)"
-                srcset="./images/doll-landscape.webp"
-              />
               <img
                 class="image-doll"
-                src="./images/doll-landscape.webp"
+                src="./images/Designer-campesina.png"
                 alt="No olvidar descripcion de la foto"
               />
             </picture>
           </div>
+
           <div class="elemento">
             <picture>
-              <source
-                media="(width < 768px)"
-                srcset="./images/doll-portrait.webp"
-              />
-              <source
-                media="(width >= 768px)"
-                srcset="./images/doll-landscape.webp"
-              />
               <img
                 class="image-doll"
-                src="./images/doll-landscape.webp"
+                src="./images/Designer-campesina.png"
                 alt="No olvidar descripcion de la foto"
               />
             </picture>
           </div>
+
           <div class="elemento">
             <picture>
-              <source
-                media="(width < 768px)"
-                srcset="./images/doll-portrait.webp"
-              />
-              <source
-                media="(width >= 768px)"
-                srcset="./images/doll-landscape.webp"
-              />
               <img
                 class="image-doll"
-                src="./images/doll-landscape.webp"
+                src="./images/Designer-campesina.png"
                 alt="No olvidar descripcion de la foto"
               />
             </picture>
           </div>
+         </div>
         </div>
       </section>
 
       <!---Groups--->
       <section class="container-groups">
-        <div class="gorup-muñecas">
-          <div><a href="class-muñeca-feliz">muñeca Feliz</a></div>
-          <div><a href="class-muñecas-enfermeras">muñeca Emfermeras</a></div>
-          <div><a href="class-muñeca-pava">Muñeca Pava</a></div>
-          <div><a href="class-muñeca-campesina">muñeca Campesina</a></div>
+        <div class="group-munecas">
+          <div class="enlace-groups">
+            <a href="class-muneca-feliz">Muñeca Feliz</a>
+          </div>
+          <div><a href="class-munecas-enfermeras">Muñeca Emfermeras</a></div>
+          <div><a href="class-muneca-pava">Muñeca Pava</a></div>
+          <div><a href="class-muneca-campesina">Muñeca Campesina</a></div>
+          <div>
+            <a href="class-muneca-personalizada">Muñeca Personalizada</a>
+          </div>
+          <div><a href="class-munecos-emocines">Muñecos De Emociones</a></div>
+        </div>
+
+        <div class="card-munecos">
+          <div class="card-muneco card-muneco1">
+              <img src="./images/Designer-Pava.png" alt="Alps" />
+              <div class="card-muneco-info">
+                <p>In stock</p>
+                <p>Soft Piggy</p>
+                <p><span class="current-price">Rs. 550.00</span><span class="previous-price">Rs. 550.00</span></p>
+                <p>An adorable Soft Piggy plush.</p>
+              </div>
+          </div>
+
+          <div class="card-muneco card-muneco2">
+            <img src="./images/Designer-Pava.png"" alt="Alps" />
+              <div class="card-muneco-info">
+                <p>In stock</p>
+                <p>Soft Piggy</p>
+                <p><span class="current-price">Rs. 550.00</span><span class="previous-price">Rs. 550.00</span></p>
+                <p>An adorable Soft Piggy plush.</p>
+              </div>
+          </div>
+
+          <div class="card-muneco card-muneco3">
+            <img src="./images/Designer-Pava.png" alt="Alps" />
+              <div class="card-muneco-info">
+                <p>In stock</p>
+                <p>Soft Piggy</p>
+                <p><span class="current-price">Rs. 550.00</span><span class="previous-price">Rs. 550.00</span></p>
+                <p>An adorable Soft Piggy plush.</p>
+              </div>
+          </div>
+
+          <div class="card-muneco card-muneco4">
+            <img src="./images/Designer-Pava.png" alt="Alps" />
+              <div class="card-muneco-info">
+                <p>In stock</p>
+                <p>Soft Piggy</p>
+                <p><span class="current-price">Rs. 550.00</span><span class="previous-price">Rs. 550.00</span></p>
+                <p>An adorable Soft Piggy plush.</p>
+              </div>
+          </div>
+
+          <div class="card-muneco card-muneco5">
+            <img src="./images/Designer-Pava.png" alt="Alps" />
+              <div class="card-muneco-info">
+                <p>In stock</p>
+                <p>Soft Piggy</p>
+                <p><span class="current-price">Rs. 550.00</span><span class="previous-price">Rs. 550.00</span></p>
+                <p>An adorable Soft Piggy plush.</p>
+              </div>
+          </div>
+
+          <div class="card-muneco card-muneco6">
+            <img src="./images/Designer-Pava.png" alt="Alps" />
+              <div class="card-muneco-info">
+                <p>In stock</p>
+                <p>Soft Piggy</p>
+                <p><span class="current-price">Rs. 550.00</span><span class="previous-price">Rs. 550.00</span></p>
+                <p>An adorable Soft Piggy plush.</p>
+              </div>
+          </div>
         </div>
       </section>
+
       <!--Images Popular-->
       <section class="section-popular">
         <h2>OUR POPULAR BRANDS</h2>
@@ -524,7 +573,22 @@
       </div>
     </footer>
 
+    <script>
+      const buttonmovile = document.getElementById("bouton-movile")
+      const mobilecolose=document.getElementById("close-navbar");
+      const mobilenav=document.getElementById("navbar-movile");
+      buttonmovile.addEventListener("click", ()=>{
+        mobilenav.classList.add("mostrar")
+        mobilecolose.classList.add("ocultar")
+      })
+
+      mobilecolose.addEventListener("click", ()=>{
+        mobilenav.classList.remove("mostrar")
+        mobilecolose.classList.remove("ocultar")
+      })
+        </script>
+
+
     <script src="./js/main.js"></script>
-    
   </body>
 </html>
