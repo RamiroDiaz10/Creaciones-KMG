@@ -1,14 +1,29 @@
 @import url(./normalize.css);
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
   /** Convierte 1rem en base 10*/
   --over-font-size: 62.5%;
 
   /** colores base */
-  --Pink-Pearl: #eda3d0;
-  --Smoky-Black: #0f0f0f;
+  /* /* --Pink-Pearl: #eda3d0;   estos son los primeros colores que escogimos */
+  /* --Smoky-Black: #0f0f0f; */ 
+
+  /* colores primarios */
+
+  --Fondo-body:	#f8f2ec;
+  --Acentos-rosados:	#e9aeb6;                    /**  o #d88c9a */
+  --Marron-calido:	#7b5e57;
+  --Verde-vintage:	#a4b494;
+  --Detalles-dorados:	#c9b79c;
+
+  /* fuentes */
+
+  --fuente-principal: "Palyfair Display", serif;
+
 }
 
 html {
@@ -25,54 +40,61 @@ body {
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: var(--Fondo-body);
+  color: #4a3c2a;
+
 }
 
-h2 {
+/* h2 {
   text-align: center;
   font-family: cursive;
   font-size: 60px;
   line-height: 66px;
   text-transform: capitalize;
   color: rgb(190, 54, 77);
+} */
+
+/* h3 {
+  color: fuchsia;
+  font-family: cursive;
+} */
+h2 {
+  font-family: var(--fuente-principal);
+  font-size: 3rem;
+  color: var(--Marron-calido);
+
 }
 
 h3 {
-  color: fuchsia;
-  font-family: cursive;
+  font-family: var(--fuente-principal);
+  color: #d88c9a;
+  margin-top: 2rem;
 }
 
-h2,
-p,
-a {
-  color: var(--Smoky-Black);
-}
-
-ul {
-  display: contents;
-}
-
-ul,
-a {
-  text-decoration: none;
-  list-style: none;
-}
-
+ul, 
 li {
   display: contents;
   text-decoration: none;
+  list-style: none;
 }
 
 
 
 a {
   color: black;
-  font-family: cursive;
+  font-family: var(--fuente-principal);
   text-decoration: none;
   flex-direction: column;
   display: flex;
+  list-style: none;
+
+}
+
+p {
+  font-family: var(--fuente-principal);
 
 }
 
@@ -86,12 +108,6 @@ img {
   border-radius: 2rem;
 }
 
-
-
-p {
-  color: rgb(203, 41, 68);
-  font-family: cursive;
-}
 
 .container {
   border: 1px dotted blue;
@@ -116,11 +132,13 @@ p {
 /** Header */
 .header {
   border: 1px dotted red;
+  background-color: #f2e4da;
+
 }
 
 .top-bar {
   background-color: #FFAB81;
-  color: rgb(0, 1, 16);
+  /* color: rgb(0, 1, 16); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -129,7 +147,7 @@ p {
 }
 
 .top-bar a {
-  color: rgb(253, 253, 253);
+  /* color: rgb(253, 253, 253); */
   text-decoration: none;
 }
 
@@ -246,7 +264,7 @@ p {
   padding: 8px 12px;
   cursor: pointer;
   border-radius: 4px;
-  color: rgb(213, 22, 146);
+  /* color: rgb(213, 22, 146); */
   font-weight: 500;
 }
 
@@ -459,6 +477,7 @@ p {
   anchor-name: --carousel;
   scroll-snap-type: x mandatory;
   scroll-marker-group: after;
+  background-color: #efae80;
 
   &::-webkit-scrollbar {
     display: none;
