@@ -18,10 +18,10 @@
         "titleBar.inactiveBackground": "#04661699",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-<<<<<<< HEAD
-    "peacock.color": "#1857a4",
+
+    "peacock.color": "#04661699",
     "liveServer.settings.port": 5501
-=======
-    "peacock.color": "#04661699"
->>>>>>> feature/carrusdown
+
+    
+
 }
